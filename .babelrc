@@ -1,0 +1,7 @@
+//We are doing this to load and run js files through babel in webpack
+//Previously we were running babel from CLI with these presets but now these are
+//set in .babelrc file
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": ["transform-class-properties", "transform-object-rest-spread"]
+}
