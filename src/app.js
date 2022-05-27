@@ -17,27 +17,6 @@ import "normalize.css";
 import "./styles/styles.scss";
 
 const store = configureStore();
-store.dispatch(
-  addExpense({
-    description: "Water Bill",
-    amount: 1000,
-    createdAt: 3000,
-  })
-);
-store.dispatch(
-  addExpense({
-    description: "Gas Bill",
-    amount: 3000,
-    createdAt: 2000,
-  })
-);
-store.dispatch(
-  addExpense({
-    description: "Rent",
-    amount: 4500,
-    createdAt: 1000,
-  })
-);
 
 const jsx = (
   <Provider store={store}>
